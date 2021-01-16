@@ -35,14 +35,8 @@ import java.util.List;
 @Service
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
-<<<<<<< HEAD
     @Autowired
     private IUserRoleService userRoleService;
-=======
-@Autowired
-    private IUserRoleService userRoleService;
-    @Autowired
->>>>>>> feature/branch1
     @Autowired
     private IUserRoleService userRoleService;
     @Autowired
